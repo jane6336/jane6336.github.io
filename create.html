@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <title>레이아웃</title>\
+    <style>
+
+    *{margin:0;
+      padding:0;}
+
+    body{font-family: 'Noto Sans KR', sans-serif;
+         font-size: 12px;
+         color:#444444;}
+
+    ul{list-style-type: none;}
+
+    .clear{clear:both;}
+
+    #page{width:980px;
+          margin:0 auto;}
+
+    /**11-6 HEADER,NAV 태그로 헤더 레이아웃**/
+    header #logo{float:left;
+                 margin:15px 0 0 20px;}
+
+    header #moto{float:left;
+                 margin:45px 0 0 20px;}
+
+    header #top_menu{float: right;
+    margin: 50px 0 0 0;}
+
+    header #top_menu li{display: inline;}
+
+    .line{margin-top: 25px;
+          border-top:solid 1px #cccccc;}
+
+    header nav ul {margin-top: 25px;}
+
+    header nav li{display: inline;}
+
+    header nav li.item  {margin-left:40px; }
+
+    /**11-7 SECTION 태그로 배너**/
+    main{margin-top:10px;}
+
+    #banner{height:110px;
+            background-color:#a6d9ec;}
+
+    #banner ul{margin-top:5px;}
+
+    #banner li{display:inline;
+               margin-left:28px;}
+
+    #customer{width:300px;
+              height:111px;
+              float:left;
+              margin-top:20px;}
+
+    /**11-8 태그로 고객센터, 공지사항, faq**/
+    #customer.title{margin-left: :10px;
+                    float: left;}
+
+    #customer .more{float:right;}
+
+    #customer .phone{margin-left: 10px;}
+
+    #notice{width:300px;
+            height:111px;
+            float:left;
+            margin-top: 20px;
+            margin-left: 40px;}
+
+    #notice .title{margin-left: 10px;
+                   float:left;}
+
+    #notice .more{float: right;}
+
+    #notice ul{margin-top: 12px;
+               color:#666666;}
+
+    #notice li{margin-top: 5px;}
+
+    #notice .subject{float: left;
+                     margin-left: 10px;}
+
+    #notice .date{float:right;
+                  margin-right:5px;}
+
+    #faq{width:300px;
+         height:111px;
+         float: left;
+         margin-top: 20px;
+         margin-left: 30px;}
+
+    .line{margin-top: 25px;
+          border-top:solid 1pz #cccccc;}
+
+    /**11-9 section 태그로 사이트맵*/
+    #sitemap{padding:20px 0 0 15px;}
+
+    #sitemap div{height:140px;
+                 float: left;
+                 margin:0 15px 0 15px;}
+
+    #sitemap h3{font-size: 15px;
+                color:#a6d9ec;
+                margin-left:16px;}
+
+    #sitemap ul{color:#666666;}
+
+    #sitemap li{margin:5px 0 0 20px;
+                list-style-image: url("./img/dot.png")}
+
+    footer{padding:20px 0 0 15px;
+           border-top:solid 3px #a6d9ec;
+           color:#666666;}
+
+    footer #address{float: left;}
+
+    footer #link{float: right;}
+
+    footer #footer_menu li{margin-top:5px;}
+
+    footer #company_info{margin-top:20px;}
+
+    footer #company_info li{margin-top:2px;}
+
+    footer #copyright{margin-top: 10px;
+                      font-size: 12px;
+                      color:#888888;}
+
+    footer #link h3{font-size: 16px;
+                    color:#a6d9ec;}
+
+    footer #link select{margin:5px 0 0 50px;
+                        width:100px;
+                      height:18px;
+                      font-size: 11px;}
+
+    footer #icons{margin-top: 5px;
+                  text-align: right;}
+
+    </style>
+  </head>
+  <body>
+  <div id="page">
+    <header>
+      <a href="web.html"><img id="logo" src="./img/logo.png"></a>
+      <img id="moto" src="./img/moto.jpg">
+      <ul id="top_menu">
+        <li>로그인 |</li>
+        <li>회원가입 |</li>
+        <li>사이트맵 |</li>
+        <li>회사 소개 |</li>
+      </ul>
+      <div class="clear"></div>
+      <div class="line"></div>
+
+    <nav>
+        <ul>
+          <a href="sub.html"><li><img src="./img/menu01.png"></li></a>
+          <a href="part_fixed_2col.html"><li class="item"><img src="./img/menu02.jpg"></li></a>
+          <a href="flexible_2coll.html"><li class="item"><img src="./img/menu03.jpg"></li></a>
+          <a href="html5_layout.html"><li class="item"><img src="./img/menu04.jpg"></li></a>
+          <a href="fixed_3col.html"><li class="item"><img src="./img/menu05.jpg"></li></a>
+        </ul>
+      </nav>
+    </header>
+  </div>
+ <!--11-6 HEADER,NAV 태그로 헤더 레이아웃-->
+
+  <div id="page">
+    <main>
+      <section id="banner">
+        <ul>
+          <li><img src="./img/banner01.jpg"></li>
+          <li><img src="./img/banner_bar.jpg"></li>
+          <li><img src="./img/banner02.jpg"></li>
+          <li><img src="./img/banner_bar.jpg"></li>
+          <li><img src="./img/banner03.jpg"></li>
+      </ul>
+    </section>
+    <!--11-7 SECTION 태그로 배너-->
+
+    <article id="customer">
+      <img class="title" src="./img/title_customer.jpg">
+      <img class="more" src="./img/more.jpg">
+      <img class="phone" src="./img/customer_phone.jpg">
+    </article>
+
+    <article id="notice">
+      <img class="title" src="./img/title_notice.jpg">
+      <img class="more" src="./img/more.jpg">
+      <div class="clear"></div>
+      <ul>
+        <li>
+          <div class="subject">새로운 상품의 출시를 알려드립니다.</div>
+          <div class="date">2014-03-03</div>
+          <div class="clear"></div>
+        </li>
+        <li>
+          <div class="subject">새로운 상품의 출시를 알려드립니다.</div>
+          <div class="date">2014-03-03</div>
+          <div class="clear"></div>
+        </li>
+        <li>
+          <div class="subject">새로운 상품의 출시를 알려드립니다.</div>
+          <div class="date">2014-03-03</div>
+          <div class="clear"></div>
+        </li>
+        <li>
+          <div class="subject">새로운 상품의 출시를 알려드립니다.</div>
+          <div class="date">2014-03-03</div>
+          <div class="clear"></div>
+        </li>
+      </ul>
+    </article>
+
+
+    <article id="faq">
+      <img src="./img/banner_faq.jpg">
+    </article>
+       <div class="clear"></div>
+       <div class="line"></div>
+     <!--11-8 태그로 고객센터, 공지사항, faq-->
+
+    <section id="sitemap">
+      <div>
+        <h3>손해보험 상식</h3>
+        <ul>
+          <li>손해보험이란?</li>
+          <li>나에게 필요한 보험은?</li>
+          <li>보험약관의 중요성</li>
+          <li>손해보험의 특징</li>
+        </ul>
+      </div>
+      <div>
+        <h3>루바토 보험의 장점</h3>
+        <ul>
+          <li>보험료 저렴</li>
+          <li>신속한 처리 및 보상</li>
+          <li>만기 시 원리금 보장</li>
+        </ul>
+      </div>
+      <div>
+        <h3>고객센터</h3>
+        <ul>
+          <li>전국 지점 안내</li>
+          <li>손해배상 안내</li>
+          <li>손해보험 FAQ</li>
+          <li>질문과 답변</li>
+        </ul>
+      </div>
+      <div>
+        <h3>마이페이지</h3>
+        <ul>
+        <li>계약 조회/변경</li>
+        <li>보험 계약 갱신</li>
+        <li>보험료 납입</li>
+        <li>증명서 발급</li>
+      </ul>
+    </div>
+    <div>
+      <h3>가입 안내</h3>
+      <ul>
+      <li>공인인증센터</li>
+      <li>인증서 발급/갱신</li>
+      <li>인증서 폐기</li>
+      <li>웹 로그인</li>
+    </ul>
+  </div>
+  <div>
+    <h3>회사 소개</h3>
+    <ul>
+    <li>기업 소개</li>
+    <li>찾아오시는 길</li>
+    </ul>
+  </div>
+</section>
+<div class="clear"></div>
+<!--11-9 section 태그로 사이트맵-->
+     </main>
+
+<!--11-10 footer 태그로 하단 푸터 레이아웃 만들기-->
+<div id="page">
+  <footer>
+    <article id="address">
+      <ul id="footer_menu">
+        <li>개인정보 취급방침 | 이용 안내 | 이메일 무단수집 거부</li>
+        <li>서민금융119서비스 | 보험범죄 신고 | 전자 민원 접수 | 보험약관 안내 | 금융사기신고센터</li>
+      </ul>
+      <ul id="company_info">
+        <li>TRAVEL JEJU</li>
+        <li>대표이사 : 신재연</li>
+        <li>주소 :제주특별시 남원읍 원님로
+          (02)123-1234, FAX : (02)1234-1234
+        <li id="copyright">Copyright by Travel Company All Rights Reserved.
+      </ul>
+    </article>
+    <article id="link">
+      <h3>고객센터 1588-1234</h3>
+      <select>
+        <option>네이버</option>
+        <option>다음</option>
+        <option>구글</option>
+      </select>
+      <div id="icons">
+        <img src="./img/face.jpg" width="20" >
+        <img src="./img/insta.jpg" width="20" >
+        <img src="./img/c.png" width="20" >
+     </div>
+   </article>
+ </footer>
+   </div>
+  </body>
+</html>
